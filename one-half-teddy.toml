@@ -1,16 +1,13 @@
 # Author: @teddy-94, Teodor Adolfsson
-# This is a minimal theme based on the colorscheme One Half Dark.
-# This theme is designed to make Helix blend into the Windows terminal
-# when using the colorscheme One Half Dark in the terminal
+# This is a minimal theme based on the colorscheme One Half .
+# Original https://github.com/sonph/onehalf
+# One Half Teddy GitHub Repo: https://github.com/Teddy-94/one-half-teddy
 
-# Helix theme docs https://docs.helix-editor.com/themes.html
-# Link to this themes GitHub Repo
-
-# Interface = https://docs.helix-editor.com/themes.html#interface
+# Interface
 "ui.background"         = { bg = "bluegray_bg" }
 "ui.gutter"             = { bg = "bluegray_bg" }
 "ui.linenr"             = { fg = "fg_text", bg = "bluegray_bg" }
-"ui.linenr.selected"    = { fg = "fg_text", bg = "#383838", modifiers = ["bold"] }
+"ui.linenr.selected"    = { fg = "fg_text", bg = "selection_gray", modifiers = ["bold"] }
 "ui.statusline"         = { fg = "fg_text", bg = "gray_bg" }
 
 "ui.menu"               = { fg = "fg_text", bg = "bluegray_bg" }
@@ -25,16 +22,16 @@
 "ui.cursor.match"       = { fg = "yellow", modifiers = ["underlined"] }
 "ui.virtual.whitespace" = "gray_light"
 
-"ui.cursor"     = { fg = "#f2f2f2", modifiers = ["reversed"] }
-"ui.cursorline" = { bg = "#383838" }
-"ui.selection"  = { bg = "#686868" }
+"ui.cursor"     = { fg = "cursor_white", modifiers = ["reversed"] }
+"ui.cursorline" = { bg = "cursorline_gray" }
+"ui.selection"  = { bg = "selection_gray" }
 
-# git diff
+# Git Diff
 "diff.plus"  = "green"
 "diff.delta" = "yellow"
 "diff.minus" = "red"
 
-# Syntax highlighting = https://docs.helix-editor.com/themes.html#syntax-highlighting
+# Syntax Highlighting
 "function"                  = "blue"
 "constant.character.escape" = "blue"
 "attribute"                 = "blue"
@@ -54,7 +51,7 @@
 "label"                     = "fg_text"
 "namespace"                 = "fg_text"
 
-# markup styling, 
+# Markup Styling, 
 "markup.heading"       = "blue"
 "markup.list"          = "red"
 "markup.bold"          = { fg = "yellow", modifiers = ["bold"] }
@@ -65,7 +62,7 @@
 "markup.quote"         = "blue"
 "markup.raw"           = "green"
 
-# ui messages things
+# UI messages
 "diagnostic" = { underline.style="line" }
 "info"       = "blue"
 "hint"       = "fg_text"
@@ -74,12 +71,15 @@
 "error"      = {fg = "red", underline.style="double_line" }
 
 [palette]
-# UI Colors (Cursor and Highlight hardcoded)
-bluegray_bg = "#282C34" 
-gray_bg     = "#282828" 
-fg_text     = "#DCDFE4"
+# UI Colors
+bluegray_bg     = "#282C34" 
+gray_bg         = "#282828" 
+fg_text         = "#DCDFE4"
+cursor_white    = "#f2f2f2"
+selection_gray  = "#686868"
+cursorline_gray = "#424242"
 
-# Syntax highlighting colors
+# Syntax Highlighting Colors
 red        = "#E06C75"
 green      = "#98C379" 
 yellow     = "#E5C07B" 
