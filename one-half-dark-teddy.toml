@@ -1,0 +1,90 @@
+# Author: @teddy-94, Teodor Adolfsson
+# This is a minimal theme based on the colorscheme One Half Dark.
+# This theme is designed to make Helix blend into the Windows terminal
+# when using the colorscheme One Half Dark in the terminal
+
+# Helix theme docs https://docs.helix-editor.com/themes.html
+# Link to this themes GitHub Repo
+
+# Interface = https://docs.helix-editor.com/themes.html#interface
+"ui.background"         = { bg = "bluegray_bg" }
+"ui.gutter"             = { bg = "bluegray_bg" }
+"ui.linenr"             = { fg = "fg_text", bg = "bluegray_bg" }
+"ui.linenr.selected"    = { fg = "fg_text", bg = "#383838", modifiers = ["bold"] }
+"ui.statusline"         = { fg = "fg_text", bg = "gray_bg" }
+
+"ui.menu"               = { fg = "fg_text", bg = "bluegray_bg" }
+"ui.menu.selected"      = { fg = "gray_bg", bg = "fg_text" }
+"ui.bufferline"         = { fg = "fg_text", bg = "bluegray_bg" }
+"ui.bufferline.active"  = { fg = "fg_text", bg = "gray_bg" }
+"ui.popup"              = { bg = "gray_bg" }
+"ui.window"             = { bg = "bluegray_bg" }
+"ui.help"               = { fg = "fg_text", bg = "gray_bg" }
+"ui.text"               = "fg_text"
+"ui.text.focus"         = "fg_text"
+"ui.cursor.match"       = { fg = "yellow", modifiers = ["underlined"] }
+"ui.virtual.whitespace" = "gray_light"
+
+"ui.cursor"     = { fg = "#f2f2f2", modifiers = ["reversed"] }
+"ui.cursorline" = { bg = "#383838" }
+"ui.selection"  = { bg = "#686868" }
+
+# git diff
+"diff.plus"  = "green"
+"diff.delta" = "yellow"
+"diff.minus" = "red"
+
+# Syntax highlighting = https://docs.helix-editor.com/themes.html#syntax-highlighting
+"function"                  = "blue"
+"constant.character.escape" = "blue"
+"attribute"                 = "blue"
+"string"                    = "green"
+"constant.numeric"          = "green"
+"type"                      = "yellow"
+"constructor"               = "yellow"
+"comment"                   = "gray_light"
+"tag"                       = "purple"
+"constant.builtin"          = "purple"
+"variable.builtin"          = "purple"
+"keyword"                   = "red"
+"operator"                  = "red"
+"special"                   = "red"
+"variable"                  = "fg_text"
+"constant"                  = "fg_text"
+"label"                     = "fg_text"
+"namespace"                 = "fg_text"
+
+# markup styling, 
+"markup.heading"       = "blue"
+"markup.list"          = "red"
+"markup.bold"          = { fg = "yellow", modifiers = ["bold"] }
+"markup.italic"        = { fg = "purple", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url"      = { fg = "yellow", modifiers = ["underlined"] }
+"markup.link.text"     = "red"
+"markup.quote"         = "blue"
+"markup.raw"           = "green"
+
+# ui messages things
+"diagnostic" = { underline.style="line" }
+"info"       = "blue"
+"hint"       = "fg_text"
+"debug"      = "gray_light"
+"warning"    = "yellow"
+"error"      = {fg = "red", underline.style="double_line" }
+
+[palette]
+# UI Colors (Cursor and Highlight hardcoded)
+bluegray_bg = "#282C34" 
+gray_bg     = "#282828" 
+fg_text     = "#DCDFE4"
+
+# Syntax highlighting colors
+red        = "#E06C75"
+green      = "#98C379" 
+yellow     = "#E5C07B" 
+blue       = "#61AFEF" 
+purple     = "#C678DD" 
+cyan       = "#56B6C2"
+gray_light = "#767676" 
+
