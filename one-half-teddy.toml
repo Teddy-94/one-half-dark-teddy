@@ -38,7 +38,7 @@
 "string"                    = "green"
 "constant.numeric"          = "green"
 "type"                      = "yellow"
-"constructor"               = "yellow"
+"constructor"               = "cyan"
 "comment"                   = "gray_light"
 "tag"                       = "purple"
 "constant.builtin"          = "purple"
